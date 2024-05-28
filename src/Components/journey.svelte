@@ -12,4 +12,16 @@
   </section>
 
   <style>
+     #journey-section {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+     }
+     .journey-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 1rem;
+    }
   </style>
