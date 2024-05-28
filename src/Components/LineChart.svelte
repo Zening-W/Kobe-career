@@ -37,7 +37,7 @@
     .curve(curveStep);
 </script>
 
-<h1 class="body-header">Responsive, Static Chart Example</h1>
+<h1 class="body-header">Kobe and other shooting guards</h1>
 <p class="body-text">
   This component is an example of a responsive chart built with Svelte and
   D3.js.
