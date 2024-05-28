@@ -1,5 +1,5 @@
 <section id="intro">
-  <h1 id="intro-hed"><span class="highlight">Kobe Bryant's</span> career success</h1>
+  <h1 id="intro-hed"><span class="highlight">Kobe Bryant's</span> Career Success</h1>
   <h1 class="intro-sub">An In-Depth Analysis of <span class="highlight">Mamba's</span> Legendary Journey</h1>
   <h3 id="intro__date">
     <a href="https://github.com/Zening-W/Kobe-career" target="_blank">Zening Wang, Kening Li, Ethan Hu</a>, May 2024
@@ -8,10 +8,13 @@
 
 <style>
   #intro {
-    max-width: 600px;
+    width: 100%; /* Change max-width to width to make it full width */
     margin: 1rem auto;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem;
+    background-color: #552583; /* Lakers Purple */
+    color: white; /* Text color for better contrast */
+    border-radius: 10px;
   }
 
   #intro-hed {
@@ -22,32 +25,28 @@
     text-transform: uppercase;
     max-width: 100%;
     margin: auto;
-    color: var(--squid-ink);
   }
 
   .highlight {
-    color: #552583; /* Lakers Purple */
+    color: #ffd700; /* Lakers Gold */
     font-weight: bold;
   }
 
   .intro-sub {
     font-size: 1.4rem;
-    color: var(--squid-ink);
     text-align: center;
     margin: 1rem;
-    opacity: 0.75;
+    opacity: 0.9;
     padding: 2rem;
     font-family: var(--font-main);
   }
 
   #intro__date {
     font-size: 1.1rem;
-    color: var(--squid-ink);
     margin: 0px;
     margin-top: 15px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    color: black;
     padding-bottom: 1rem;
     font-family: var(--font-main);
   }
