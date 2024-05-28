@@ -1,8 +1,8 @@
 <section id="intro">
-  <h1 id="intro-hed">Title Of The Article</h1>
-  <h1 class="intro-sub">Subtitle of the article.</h1>
+  <h1 id="intro-hed"><span class="highlight">Kobe Bryant's</span> career success</h1>
+  <h1 class="intro-sub">An In-Depth Analysis of <span class="highlight">Mamba's</span> Legendary Journey</h1>
   <h3 id="intro__date">
-    <a href="https://twitter.com/" target="_blank">Author Name</a>, Month Year
+    <a href="https://github.com/Zening-W/Kobe-career" target="_blank">Zening Wang, Kening Li, Ethan Hu</a>, May 2024
   </h3>
 </section>
 
@@ -23,6 +23,11 @@
     max-width: 100%;
     margin: auto;
     color: var(--squid-ink);
+  }
+
+  .highlight {
+    color: #552583; /* Lakers Purple */
+    font-weight: bold;
   }
 
   .intro-sub {
