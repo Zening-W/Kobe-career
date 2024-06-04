@@ -45,7 +45,7 @@
 
 <h2 class="body-header">Retirement and Legacy</h2>
 <p class="body-text">
-  Kobe Bryant's legacy transcends basketball, marked by his unparalleled dedication, skill, and influence both on and off the court.
+  Though passing away, Kobe Bryant's legacy transcends basketball, marked by his unparalleled dedication, skill, and influence both on and off the court.
 </p>
 <section>
   <div class="section-container">
