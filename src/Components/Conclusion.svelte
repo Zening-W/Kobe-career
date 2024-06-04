@@ -39,7 +39,7 @@
     var conclusionSection = document.getElementById('conclusion');
     
     var image = document.createElement('img');
-    image.src = 'src/img/end.jpg'; // Replace with the actual image source
+    image.src = 'public/img/end.jpg'; // Replace with the actual image source
     image.alt = 'Kobe Bryant';
     image.style.width = '80%';
     image.style.maxWidth = '100%';

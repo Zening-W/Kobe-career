@@ -10,7 +10,7 @@
   
     // Function to create a graph
     function createGraph() {
-      csv("src/data/kobe_data_with_shaq.csv").then(data => {
+      csv("public/data/kobe_data_with_shaq.csv").then(data => {
         console.log("Loaded Data:", data); // Check if data is being loaded
   
         // Log the values of shaq_present field to inspect them

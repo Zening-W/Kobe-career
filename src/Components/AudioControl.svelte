@@ -13,7 +13,7 @@
   </script>
   
   <audio bind:this={audio} autoplay loop>
-    <source src="src\audio\music.mp3" type="audio/mpeg">
+    <source src="public\audio\music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
   
