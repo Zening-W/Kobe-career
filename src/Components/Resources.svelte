@@ -21,6 +21,18 @@
       <a class="on-end" href="https://svelte.dev/">Svelte</a>
       <span>(Rich Harris)</span>
     </p>
+    <p class="resource-item">
+      <a class="on-end" href="https://www.nba.com/player/977/kobe-bryant">NBA Official Site - Kobe Bryant</a>
+    </p>
+    <p class="resource-item">
+      <a class="on-end" href="https://en.wikipedia.org/wiki/Kobe_Bryant">Wikipedia - Kobe Bryant</a>
+    </p>
+    <p class="resource-item">
+      <a class="on-end" href="https://www.kaggle.com/code/dmirza97/nba-players-statistical-analysis/input">Information About Basketball Players From Season 1996 to 2022</a>
+    </p>
+    <p class="resource-item">
+      <a class="on-end" href="https://github.com/lazappi/nba_positions/blob/master/README.md">NBA Positions</a>
+    </p>
   </div>
 </section>
 
@@ -48,6 +60,21 @@
     color: #f1f3f3;
   }
 
+  .body-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f1f3f3;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  .body-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1f3f3;
+    margin-bottom: 1rem;
+  }
+
   @media screen and (max-width: 950px) {
     .resource-list {
       max-width: 80%;
@@ -58,3 +85,6 @@
     }
   }
 </style>
+
+
+

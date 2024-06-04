@@ -8,29 +8,24 @@
 
   // Paragraph text for scrolly
   $: steps = [
-    `<h1 class='step-title'>Step 1</h1>
-       <br><br>
+    `<h1 class='step-title'>Kobe and Shaq: The Dominant Duo</h1>
       <p>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sint aut corrupti ullam neque quia labore laborum perspiciatis, molestias amet at, voluptatem ratione quaerat in sit minima reprehenderit molestiae, nobis sed. Earum facere exercitationem sit rerum, expedita magni nihil alias?
+        Kobe, with his unparalleled work ethic, scoring prowess, and clutch performances, complemented Shaq's sheer dominance in the paint, rebounding, and defensive presence. Their on-court synergy was evident as they executed seamless plays, from alley-oops to pick-and-rolls, overwhelming their opponents with a blend of finesse and power. This partnership not only brought championships to Los Angeles but also captivated fans worldwide, leaving an indelible mark on the league.
       </p>`,
-    `<h1 class='step-title'>Step 2</h1>
+    `<h1 class='step-title'>Their Tumultuous Relationship</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sint aut corrupti ullam neque quia labore laborum perspiciatis, molestias amet at, voluptatem ratione quaerat in sit minima reprehenderit molestiae, nobis sed. Earum facere exercitationem sit rerum, expedita magni nihil alias?
-        </p>
-    <br><br>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sint aut corrupti ullam neque quia labore laborum perspiciatis, molestias amet at, voluptatem ratione quaerat in sit minima reprehenderit molestiae, nobis sed. Earum facere exercitationem sit rerum, expedita magni nihil alias?
-  `,
+        Despite their success, the relationship between Kobe and Shaq was often tumultuous, marked by contrasting personalities and occasional public feuds. Shaq's laid-back demeanor and Kobe's intense, laser-focused approach to the game sometimes clashed, leading to tensions that were well-documented in the media. However, these challenges did not diminish their individual and collective brilliance on the court. After Shaq's departure to the Miami Heat in 2004, both players continued to achieve great success independently, with Kobe leading the Lakers to two more championships and Shaq winning another title with the Heat. Over time, their mutual respect and appreciation for each other's contributions grew, solidifying their legacy as one of the greatest duos in basketball history.
+      </p>`
   ];
 
   const target2event = {
     0: () => {
-      // console.log('0' )
+      // Your event for step 0
     },
     1: () => {
       select("#chart1").style("background-color", "red");
       select("#chart2").style("background-color", "green");
     },
-
     2: () => {
       select("#chart1").style("background-color", "purple");
       select("#chart2").style("background-color", "coral");
@@ -41,9 +36,8 @@
 </script>
 
 <h2 class="body-header">Kobe and Shaq</h2>
-<p class="body-text">
-  Here's an example of a typical side-scroller. It's responsive, and will fold
-  to an overlap scroll if the screen gets small enough:
+<p class="body-text white-text">
+  Kobe Bryant and Shaquille O'Neal formed one of the most dominant duos in NBA history during their time with the Los Angeles Lakers. Together, they led the Lakers to three consecutive NBA championships from 2000 to 2002, creating a dynasty that was defined by their unique combination of skill and physicality.
 </p>
 <section>
   <!-- scroll container -->
@@ -60,15 +54,15 @@
     </div>
     <div class="charts-container">
       <div class="chart-one">
-        <svg id="chart1" />
+        <svg id="chart1"></svg>
       </div>
       <div class="chart-two">
-        <svg id="chart2" />
+        <svg id="chart2"></svg>
       </div>
     </div>
   </div>
   <br /><br />
-  <p class="body-text">And that's the end of our scrolly.</p>
+  <p class="body-text"></p>
 </section>
 
 <style>
@@ -152,35 +146,41 @@
     z-index: 10;
   }
 
-  /* Comment out the following line to always make it 'text-on-top' */
-  @media screen and (max-width: 950px) {
-    .section-container {
-      flex-direction: column-reverse;
-    }
-
-    .steps-container {
-      pointer-events: none;
-    }
-
-    .charts-container {
-      top: 7.5%;
-      width: 95%;
-      margin: auto;
-    }
-
-    .step {
-      height: 130vh;
-    }
-
-    .step-content {
-      width: 95%;
-      max-width: 768px;
-      font-size: 17px;
-      line-height: 1.6;
-    }
-
-    .spacer {
-      height: 100vh;
-    }
+  /* make side centered */
+  .section-container {
+    flex-direction: column-reverse;
   }
+
+  .steps-container {
+    pointer-events: none;
+  }
+
+  .charts-container {
+    top: 7.5%;
+    width: 75%;
+    margin: auto;
+  }
+
+  .step {
+    height: 130vh;
+  }
+
+  .step-content {
+    width: 65%;
+    max-width: 768px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .spacer {
+    height: 100vh;
+  }
+
+  .white-text {
+    color: white;
+  }
+
+  .body-header {
+  color: white;
+}
 </style>
