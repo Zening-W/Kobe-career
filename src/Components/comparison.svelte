@@ -118,26 +118,93 @@
         <svg id="newGraph"></svg>
       </div>
       <div class="conclusion">
+        {#if metric === 'pts'}
+          <p class="conclusion-text">
+            <strong>Points (pts):</strong> 
+            <br/>
+            <strong>With Shaq:</strong> Kobe's points per game increased steadily, peaking around age 25, indicating his growing role in the team's offense.
+            <br/>
+            <strong>Without Shaq:</strong> Kobe's points per game remained high, showing his continued dominance as a scorer even after Shaq's departure. But there is a small decrease near the end of his retirement.
+          </p>
+        {/if}
+        {#if metric === 'reb'}
+          <p class="conclusion-text">
+            <strong>Rebounds (reb):</strong>
+            <br/>
+            <strong>With Shaq:</strong> Except for the first few years, Kobe's rebounding numbers were relatively stable, reflecting his consistent contribution to the team's overall rebounding efforts.
+            <br/>
+            <strong>Without Shaq:</strong> There was a noticeable increase in Kobe's rebounds, suggesting he took on more responsibilities in this area after Shaq left.
+          </p>
+        {/if}
+        {#if metric === 'ast'}
+          <p class="conclusion-text">
+            <strong>Assists (ast):</strong>
+            <br/>
+            <strong>With Shaq:</strong> Kobe's assists increased over time, demonstrating his ability to facilitate plays and create opportunities for teammates.
+            <br/>
+            <strong>Without Shaq:</strong> His assist numbers were high, indicating his role as a primary playmaker in addition to being a scorer.
+          </p>
+        {/if}
+        {#if metric === 'net_rating'}
+          <p class="conclusion-text">
+            <strong>Net Rating:</strong>
+            <br/>
+            <strong>With Shaq:</strong> The team's net rating while Kobe was on the floor was positive, showcasing the effectiveness of the Kobe-Shaq duo.
+            <br/>
+            <strong>Without Shaq:</strong> The net rating remained strong, highlighting Kobe's ability to lead the team and contribute to its success.
+          </p>
+        {/if}
+        {#if metric === 'oreb_pct'}
+          <p class="conclusion-text">
+            <strong>Offensive Rebound Percentage (oreb_pct):</strong>
+            <br/>
+            <strong>With Shaq:</strong> Kobe's offensive rebound percentage was modest, reflecting his position and role on the team.
+            <br/>
+            <strong>Without Shaq:</strong> There was a slight decrease, indicating a shift in securing offensive rebounds.
+          </p>
+        {/if}
+        {#if metric === 'dreb_pct'}
+          <p class="conclusion-text">
+            <strong>Defensive Rebound Percentage (dreb_pct):</strong>
+            <br/>
+            <strong>With Shaq:</strong> The defensive rebound percentage was stable, showing Kobe's consistent defensive presence.
+            <br/>
+            <strong>Without Shaq:</strong> There was an increase, suggesting Kobe took on a larger defensive role.
+          </p>
+        {/if}
+        {#if metric === 'usg_pct'}
+          <p class="conclusion-text">
+            <strong>Usage Percentage (usg_pct):</strong>
+            <br/>
+            <strong>With Shaq:</strong> Kobe's usage percentage increased, reflecting his growing importance in the team's offensive schemes.
+            <br/>
+            <strong>Without Shaq:</strong> The usage percentage was very high, indicating Kobe was the primary option on offense.
+          </p>
+        {/if}
+        {#if metric === 'ts_pct'}
+          <p class="conclusion-text">
+            <strong>True Shooting Percentage (ts_pct):</strong>
+            <br/>
+            <strong>With Shaq:</strong> Kobe's true shooting percentage was efficient, demonstrating his effective scoring ability.
+            <br/>
+            <strong>Without Shaq:</strong> The efficiency remained high, showcasing Kobe's skill in maintaining scoring efficiency despite increased defensive focus.
+          </p>
+        {/if}
+        {#if metric === 'ast_pct'}
+          <p class="conclusion-text">
+            <strong>Assist Percentage (ast_pct):</strong>
+            <br/>
+            <strong>With Shaq:</strong> Kobe's assist percentage increased, highlighting his role in creating scoring opportunities for teammates.
+            <br/>
+            <strong>Without Shaq:</strong> The assist percentage remained high, indicating Kobe's dual role as a scorer and facilitator. But there is a small decrease near the end of his retirement.
+          </p>
+        {/if}
         <p class="conclusion-text">
-          Based on the provided metrics and the graphs, here are some observations and conclusions regarding Kobe Bryant's performance with and without Shaquille O'Neal:
-          <br/><br/>
-          <strong>Points (pts):</strong> With Shaq: Kobe's points per game increased steadily, peaking around age 25, indicating his growing role in the team's offense. Without Shaq: Kobe's points per game remained high, showing his continued dominance as a scorer even after Shaq's departure.
-          <br/><br/>
-          <strong>Rebounds (reb):</strong> With Shaq: Kobe's rebounding numbers were relatively stable, reflecting his consistent contribution to the team's overall rebounding efforts. Without Shaq: There was a noticeable increase in Kobe's rebounds, suggesting he took on more responsibilities in this area after Shaq left.
-          <br/><br/>
-          <strong>Assists (ast):</strong> With Shaq: Kobe's assists increased over time, demonstrating his ability to facilitate plays and create opportunities for teammates. Without Shaq: His assist numbers were high, indicating his role as a primary playmaker in addition to being a scorer.
-          <br/><br/>
-          <strong>Offensive Rebound Percentage (oreb_pct):</strong> With Shaq: Kobe's offensive rebound percentage was modest, reflecting his position and role on the team. Without Shaq: There was a slight increase, indicating an increased effort in securing offensive rebounds.
-          <br/><br/>
-          <strong>Defensive Rebound Percentage (dreb_pct):</strong> With Shaq: The defensive rebound percentage was stable, showing Kobe's consistent defensive presence. Without Shaq: There was an increase, suggesting Kobe took on a larger defensive role.
-          <br/><br/>
-          <strong>Usage Percentage (usg_pct):</strong> With Shaq: Kobe's usage percentage increased, reflecting his growing importance in the team's offensive schemes. Without Shaq: The usage percentage was very high, indicating Kobe was the primary option on offense.
-          <br/><br/>
-          <strong>True Shooting Percentage (ts_pct):</strong> With Shaq: Kobe's true shooting percentage was efficient, demonstrating his effective scoring ability. Without Shaq: The efficiency remained high, showcasing Kobe's skill in maintaining scoring efficiency despite increased defensive focus.
-          <br/><br/>
-         Kobe Bryant's performance metrics demonstrate his versatility and ability to adapt to different team dynamics. During his time with Shaquille O'Neal, Kobe grew as a scorer and playmaker, contributing significantly to the team's success. After Shaq's departure, Kobe took on even more responsibilities, excelling in scoring, playmaking, and rebounding. His ability to maintain high efficiency and effectiveness in various aspects of the game solidifies his legacy as one of the greatest players in NBA history. The data illustrates Kobe's impact on the court, both as a part of the dominant duo with Shaq and as the primary leader of the Lakers in subsequent years.
+          Kobe Bryant's performance metrics demonstrate his versatility and ability to adapt to different team dynamics. During his time with Shaquille O'Neal, Kobe grew as a scorer and playmaker, contributing significantly to the team's success. After Shaq's departure, Kobe took on even more responsibilities, excelling in scoring, playmaking, and rebounding. His ability to maintain high efficiency and effectiveness in various aspects of the game solidifies his legacy as one of the greatest players in NBA history. The data illustrates Kobe's impact on the court, both as a part of the dominant duo with Shaq and as the primary leader of the Lakers in subsequent years.
         </p>
       </div>
+      
+      
     </div>
   </section>
   
