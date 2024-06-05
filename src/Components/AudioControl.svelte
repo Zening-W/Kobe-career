@@ -27,7 +27,7 @@
 </script>
 
 <audio bind:this={audio} on:canplay={onAudioLoaded} autoplay loop>
-  <source src="public/audio/music.mp3" type="audio/mpeg">
+  <source src="public/assets/audio/music.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
