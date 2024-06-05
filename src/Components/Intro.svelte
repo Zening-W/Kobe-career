@@ -36,7 +36,7 @@
     In this article, we will analyze Kobe's career in the NBA with detailed scoring statistics across the years, his altering performance with and without certain teammates, comparison to other players with same positions, and his retirement and legacy.
   </p>
   <div id="images-container">
-    <img src="public/assets/img/kobe.jpg" alt="Kobe Bryant" class="intro-image"/>
+    <img src="public\assets\img\kobe.jpg" alt="Kobe Bryant" class="intro-image"/>
   </div>
 </section>
 
