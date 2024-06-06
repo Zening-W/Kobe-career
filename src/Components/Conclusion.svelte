@@ -39,7 +39,7 @@
     var conclusionSection = document.getElementById('conclusion');
     
     var image = document.createElement('img');
-    image.src = "/Kobe-career/blob/main/public/assets/img/end.jpg";
+    image.src = "public/assets/img/end.jpg";
     image.alt = 'Kobe Bryant';
     image.style.width = '80%';
     image.style.maxWidth = '100%';
