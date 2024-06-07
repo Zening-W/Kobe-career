@@ -11,7 +11,7 @@
   import ScrollSide from "./Components/ScrollSide.svelte";
   import Comparison from "./Components/comparison.svelte";
   import AudioControl from "./Components/AudioControl.svelte";
-  
+  import PieChart from "./Components/PieChart.svelte";
 </script>
 
 <AudioControl />
@@ -22,6 +22,8 @@
 <Journey />
 <ScrollSide />
 <Comparison />
+<PieChart />
 <ScrollCenter />
 <Conclusion />
 <Resources />
+

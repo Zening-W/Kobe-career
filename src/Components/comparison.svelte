@@ -204,7 +204,7 @@
           </p>
         {/if}
         <p class="conclusion-text">
-          Kobe Bryant's performance metrics demonstrate his versatility and ability to adapt to different team dynamics. During his time with Shaquille O'Neal, Kobe grew as a scorer and playmaker, contributing significantly to the team's success. After Shaq's departure, Kobe took on even more responsibilities, excelling in scoring, playmaking, and rebounding. His ability to maintain high efficiency and effectiveness in various aspects of the game solidifies his legacy as one of the greatest players in NBA history. The data illustrates Kobe's impact on the court, both as a part of the dominant duo with Shaq and as the primary leader of the Lakers in subsequent years.
+          Kobe Bryant's performance metrics demonstrate his versatility and ability to adapt to different team dynamics. During his time with Shaquille O'Neal, Kobe grew as a scorer and playmaker, contributing significantly to the team's success. After Shaq's departure, Kobe took on even more responsibilities, excelling in scoring, playmaking, and rebounding. His ability to maintain high efficiency and effectiveness in various aspects of the game solidifies his legacy as one of the greatest players in NBA history. The data illustrates Kobe's impact on the court, both as a part of the dominant duo with Shaq and as the primary leader of the Lakers in subsequent years. Then let's explore their contribution to Lakers' championship statistically.
         </p>
       </div>
       
