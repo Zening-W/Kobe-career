@@ -3,21 +3,23 @@
     import { scaleLinear } from "d3-scale";
     import { line } from "d3-shape";
     import { axisBottom, axisLeft } from "d3-axis";
-    import { csv } from "d3-fetch";
+    // import { csv } from "d3-fetch";
     import { onMount } from "svelte";
+    import { kobe_shaq } from "../datasets";
   
-    let metric = 'pts'; // Default metric
+    let metric = 'pts'; 
+    const data = kobe_shaq
+
+    console.log('KPOBE', kobe_shaq)
   
-    // Function to create a graph
     function createGraph() {
-      csv("public/assets/data/kobe_data_with_shaq.csv").then(data => {
-        console.log("Loaded Data:", data); // Check if data is being loaded
+      // csv("public/assets/data/kobe_data_with_shaq.csv").then(data => {
+        console.log("Loaded Data:", data); 
   
-        // Log the values of shaq_present field to inspect them
         data.forEach(d => console.log("Shaq_present value:", d.Shaq_present));
   
         const svg = select("#newGraph");
-        svg.selectAll("*").remove(); // Clear any existing content
+        svg.selectAll("*").remove(); 
   
         const margin = { top: 20, right: 30, bottom: 40, left: 40 };
         const width = 800 - margin.left - margin.right;
@@ -43,8 +45,10 @@
           .x(d => x(d.age))
           .y(d => y(d[metric]));
   
-        const shaqPresentData = data.filter(d => String(d.Shaq_present) === "True");
-        const shaqAbsentData = data.filter(d => String(d.Shaq_present) === "False");
+        // const shaqPresentData = data.filter(d => String(d.Shaq_present) === "True");
+        // const shaqAbsentData = data.filter(d => String(d.Shaq_present) === "False");
+        const shaqPresentData = data.filter(d => d.Shaq_present === true);
+        const shaqAbsentData = data.filter(d => d.Shaq_present === false);
   
         console.log("Shaq Present Data:", shaqPresentData); // Check filtered data
         console.log("Shaq Absent Data:", shaqAbsentData); // Check filtered data
@@ -83,7 +87,7 @@
         .attr("y", height - 300)
         .attr("fill", "orange")
         .text("Without Shaq");
-    }).catch(error => console.error('Error loading data:', error));
+    // }).catch(error => console.error('Error loading data:', error));
     }
   
     // Function to update the graph based on selected metric
