@@ -1,4 +1,5 @@
 <script>
+  import a from '/assets/audio/music.mp3';
   let isPlaying = true;
   let audio;
 
@@ -27,7 +28,8 @@
 </script>
 
 <audio bind:this={audio} on:canplay={onAudioLoaded} autoplay loop>
-  <source src="public\assets\audio\music.mp3" type="audio/mpeg">
+  <source src={a} />
+
   Your browser does not support the audio element.
 </audio>
 
@@ -50,3 +52,4 @@
     background-color: #e0e0e0;
   }
 </style>
+
