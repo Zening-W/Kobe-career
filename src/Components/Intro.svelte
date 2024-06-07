@@ -1,4 +1,5 @@
 <script>
+  import intro from '/assets/img/kobe.jpg'; 
   // Function to gradually show text
   function showText(id, delay) {
     setTimeout(() => {
@@ -16,6 +17,7 @@
     showText("text6", 13000); // Show first text after 1 second
   });
 </script>
+
 
 <!-- Include Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -36,7 +38,8 @@
     In this article, we will analyze Kobe's career in the NBA with detailed scoring statistics across the years, his altering performance with and without certain teammates, comparison to other players with same positions, and his retirement and legacy.
   </p>
   <div id="images-container">
-    <img src="public\assets\img\kobe.jpg" alt="Kobe Bryant" class="intro-image"/>
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <img src={intro} />
   </div>
 </section>
 
